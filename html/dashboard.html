@@ -1,0 +1,176 @@
+<html>
+
+<head>
+    <title></title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="../css/css/daterangepicker.css">
+    <link rel="stylesheet" href="../css/css/Chart.min.css">
+    <link rel="stylesheet" href="../css/sass/main.css">
+    <link rel="stylesheet" href="../css/sass/responsive.css">
+</head>
+
+<body>
+
+<div class="page-container">
+
+    <div class="sidebar-menu">
+        <div class="sidebar-header">
+            <div class="logo">
+                <a href=""><h1>Logo</h1></a>
+            </div>
+        </div>
+
+        <div class="main-menu">
+            <div class="slimScrollDiv">
+
+                <ul class="metismenu">
+                    <li>
+                        <a href="#"><img src="../img/icons/iconfinder_home.svg" alt=""> Dashboard</a>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0)"><img src="../img/icons/box.svg" alt=""> Products</a>
+                        <ul class="collapse">
+                            <li><a href="#">Products</a></li>
+                            <li><a href="#">Products</a></li>
+                            <li><a href="#">Products</a></li>
+                            <li><a href="#">Products</a></li>
+                            <li><a href="#">Products</a></li>
+                            <li><a href="#">Products</a></li>
+                            <li><a href="#">Products</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0)"><img src="../img/icons/supermarket.svg" alt=""> Orders</a>
+                        <ul class="collapse">
+                            <li><a href="#">Orders</a></li>
+                            <li><a href="#">Orders</a></li>
+                            <li><a href="#">Orders</a></li>
+                            <li><a href="#">Orders</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#"><img src="../img/icons/Layer_2.svg" alt=""> Categories</a>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0)"><img src="../img/icons/male.svg" alt=""> Suppliers</a>
+                        <ul class="collapse">
+                            <li><a href="#">Suppliers</a></li>
+                            <li><a href="#">Suppliers</a></li>
+                            <li><a href="#">Suppliers</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#"><img src="../img/icons/bag.svg" alt=""> Stores</a>
+                    </li>
+                    <li>
+                        <a href="#"><img src="../img/icons/contactless.svg" alt=""> Payments</a>
+                    </li>
+             
+                </ul>
+            </div>
+
+            <div class="settings"><a href=""><i class="fas fa-cog"></i> Settings</a></div>
+        </div>
+    </div>
+    
+    <div class="main-content">
+        <header>
+            <div class="user-profile drop-t-open">
+                <h4>Admin</h4>
+
+                <div class="img" style="background-image: url(../img/);">
+                    <span>am</span>
+                </div>
+
+                <div class="dropdown-wrap eff03">
+                    <i class="fas fa-caret-up"></i>
+
+                    <ul class="dropdown-m">
+                        <li><a href="#">Message</a></li>
+                        <li><a href="#">Log Out</a></li>
+                    </ul>
+                </div>
+            </div>
+        </header>
+
+
+        <div class="main-content-inner">
+   
+
+
+            <div class="page-filter">
+                <h1>DASHBOARD</h1>
+                <div class="filter-wrap fashboard-filter">
+                    <div class="input-wrap">
+                        <input type="text" id="datepicker" placeholder="Search by Name">
+                        <span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card-wrap">
+                <div class="item-wrap">
+                    <div class="item">
+                        <div class="title">Total revenue</div>
+                        <h1>$419,450.12</h1>
+                        <div class="bottom">
+                            <p>value of orders</p>
+                            <span class="top">12%</span>
+                        </div>
+                    </div>
+
+                    <div class="item">
+                        <div class="title">Total orders</div>
+                        <h1>2,888</h1>
+                        <div class="bottom">
+                            <p># of orders</p>
+                            <span class="top">15%</span>
+                        </div>
+                    </div>
+
+                    <div class="item">
+                        <div class="title">Total revenue</div>
+                        <h1>$145.24</h1>
+                        <div class="bottom">
+                            <p>in this date range</p>
+                            <span class="bottom">-2%</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="chart">
+                <div class="title">
+                    <h1>Total sales</h1>
+                    <div class="btns">
+                        <button class="btn">Order count</button>
+                        <button class="btn back">Revenue generated</button>
+                    </div>
+                </div>
+                <canvas id="myChart"></canvas>
+            </div>
+        </div>
+    </div>
+    
+</div>
+
+
+
+
+    <script type="text/javascript" src="../js/jquery.js"></script>
+    <script type="text/javascript" src="../js/moment.min.js"></script>
+    <script type="text/javascript" src="../js/daterangepicker.min.js"></script>
+    <script type="text/javascript" src="../js/chart.js"></script>
+    <script type="text/javascript" src="../js/main.js"></script>
+ 
+</body>
+
+</html>

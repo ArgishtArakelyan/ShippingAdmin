@@ -743,7 +743,7 @@ a {
 
 .main-content .main-content-inner {
   background: #EEEEEE;
-  padding: 50px 64px 0;
+  padding: 50px 64px 64px;
 }
 
 .main-content .main-content-inner .page-filter {
@@ -771,6 +771,46 @@ a {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+.main-content .main-content-inner .page-filter .filter-wrap.fashboard-filter .input-wrap {
+  background: #fff;
+  margin-right: 0;
+  position: relative;
+}
+
+.main-content .main-content-inner .page-filter .filter-wrap.fashboard-filter .input-wrap input {
+  position: relative;
+  background: transparent;
+  padding: 10px 64px 10px 26px;
+  z-index: 1;
+}
+
+.main-content .main-content-inner .page-filter .filter-wrap.fashboard-filter .input-wrap > span {
+  position: absolute;
+  right: 0;
+  width: 38px;
+  height: 100%;
+  border-left: 1px solid #1E1E1E;
+  padding: 14px 10px;
+}
+
+.main-content .main-content-inner .page-filter .filter-wrap.fashboard-filter .input-wrap > span span {
+  border-bottom: 1px solid #1E1E1E;
+  display: block;
+  margin-bottom: 4px;
+}
+
+.main-content .main-content-inner .page-filter .filter-wrap.fashboard-filter .input-wrap > span span:nth-child(1) {
+  width: 16px;
+}
+
+.main-content .main-content-inner .page-filter .filter-wrap.fashboard-filter .input-wrap > span span:nth-child(2) {
+  width: 12px;
+}
+
+.main-content .main-content-inner .page-filter .filter-wrap.fashboard-filter .input-wrap > span span:nth-child(3) {
+  width: 8px;
 }
 
 .main-content .main-content-inner .page-filter .filter-wrap > div {
@@ -1002,5 +1042,135 @@ a {
   -webkit-box-shadow: 0px 0px 6px #00000029;
           box-shadow: 0px 0px 6px #00000029;
   border-radius: 50%;
+}
+
+.main-content-inner {
+  min-height: 100%;
+}
+
+.main-content-inner .card-wrap {
+  margin-top: 42px;
+}
+
+.main-content-inner .card-wrap .item-wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.main-content-inner .card-wrap .item-wrap .item {
+  width: calc(33.3% - 22px);
+  margin-right: 32px;
+  margin-bottom: 32px;
+  -webkit-box-shadow: 0px 0px 6px #00000029;
+          box-shadow: 0px 0px 6px #00000029;
+  border-top: 4px solid #1B7067;
+  background: #ffffff;
+  padding: 0 28px;
+}
+
+.main-content-inner .card-wrap .item-wrap .item:nth-child(3n+3) {
+  margin-right: 0;
+}
+
+.main-content-inner .card-wrap .item-wrap .item .title {
+  border-bottom: 1px solid #B4B4B4;
+  color: #1E1E1E;
+  font-size: 18px;
+  padding: 28px 0;
+}
+
+.main-content-inner .card-wrap .item-wrap .item h1 {
+  margin-top: 14px;
+  color: #1E1E1E;
+  font-size: 48px;
+}
+
+.main-content-inner .card-wrap .item-wrap .item > .bottom {
+  margin-top: 8px;
+  padding-bottom: 38px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.main-content-inner .card-wrap .item-wrap .item > .bottom p {
+  color: #1E1E1E;
+  font-size: 16px;
+}
+
+.main-content-inner .card-wrap .item-wrap .item > .bottom span {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.main-content-inner .card-wrap .item-wrap .item > .bottom span.top {
+  color: #1B7067;
+}
+
+.main-content-inner .card-wrap .item-wrap .item > .bottom span.top:after {
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  content: "\f30c";
+  font-size: 17px;
+  margin-left: 4px;
+}
+
+.main-content-inner .card-wrap .item-wrap .item > .bottom span.bottom {
+  color: #C40000;
+}
+
+.main-content-inner .card-wrap .item-wrap .item > .bottom span.bottom:after {
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  content: "\f309";
+  font-size: 17px;
+  margin-left: 4px;
+}
+
+.main-content-inner .chart {
+  border-top: 4px solid #1B7067;
+  -webkit-box-shadow: 0px 0px 6px #00000029;
+          box-shadow: 0px 0px 6px #00000029;
+  background: #fff;
+  padding: 0px 28px 28px 28px;
+}
+
+.main-content-inner .chart .title {
+  padding: 20px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.main-content-inner .chart .title h1 {
+  color: #1E1E1E;
+  font-size: 18px;
+}
+
+.main-content-inner .chart .title .btn {
+  padding: 8px 16px;
+  border-radius: 0;
+  margin-left: 24px;
+}
+
+.main-content-inner .chart .title .btn.back {
+  background: #1B7067;
+  border-color: #1B7067;
+  color: #fff;
 }
 /*# sourceMappingURL=main.css.map */
